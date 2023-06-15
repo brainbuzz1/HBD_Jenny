@@ -33,14 +33,15 @@
     </div>
     <div class="angel" style="display: none;">
         <img class="girl" src="angel.gif" alt="girl">
-        <h1 style="text-align: center;">Happy Birthday<br>My Angel 🥳🥳</h1>
     </div>
+    <h1 style="text-align: center; display: none;">Happy Birthday<br>My Angel 🥳🥳</h1>
     <h2></h2>
     <script>
         function change(){
             document.getElementsByClassName('butterfly')[0].style.display='none';
             document.getElementsByClassName('angel')[0].style.display='flex'
             document.querySelector('h2').innerHTML="Ohh it's an Angel<br>And It's her Birthday"
+            document.querySelector('h1').style.display='flex'
         }
     </script>
 </body>
