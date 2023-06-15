@@ -14,9 +14,10 @@
             flex-direction: column;
             overflow-x: scroll;
         }
-        .butterfly{
+        .angel{
             height: 70vh;
             position: relative;
+            flex-direction: column;
         }
         .girl{
             position: relative;
@@ -26,19 +27,20 @@
     </style>
 </head>
 <body>
-    <h2>Touch The Butterfly</h2>
+    <h2 style="text-align: center;">Touch The Butterfly</h2>
     <div class="butterfly">
         <img src="butterfly_blue.gif" alt="" onclick="change()">
     </div>
     <div class="angel" style="display: none;">
         <img class="girl" src="angel.gif" alt="girl">
+        <h1 style="text-align: center;">Happy Birthday<br>My Angel 🥳🥳</h1>
     </div>
     <h2></h2>
     <script>
         function change(){
             document.getElementsByClassName('butterfly')[0].style.display='none';
             document.getElementsByClassName('angel')[0].style.display='flex'
-            document.querySelector('h2').innerText="Ohh it's an Angel"
+            document.querySelector('h2').innerHTML="Ohh it's an Angel<br>And It's her Birthday"
         }
     </script>
 </body>
