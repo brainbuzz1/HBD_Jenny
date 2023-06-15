@@ -28,8 +28,18 @@
 <body>
     <h2>Touch The Butterfly</h2>
     <div class="butterfly">
+        <img src="butterfly_blue.gif" alt="" onclick="change()">
+    </div>
+    <div class="angel" style="display: none;">
         <img class="girl" src="angel.gif" alt="girl">
     </div>
     <h2></h2>
+    <script>
+        function change(){
+            document.getElementsByClassName('butterfly')[0].style.display='none';
+            document.getElementsByClassName('angel')[0].style.display='flex'
+            document.querySelector('h2').innerText="Ohh it's an Angel"
+        }
+    </script>
 </body>
 </html>
