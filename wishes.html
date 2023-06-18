@@ -19,7 +19,11 @@
             justify-content: space-between;
             align-items: center;
             width: 95%;
-            margin-top: 10px;
+            margin: 10px;
+            padding: 2%;
+            border-radius: 10px;
+            border: 2px solid rgb(142, 7, 52);
+            background-color: #ebb4b4;
         }
         .wish:nth-child(even){
             flex-direction: row-reverse;
@@ -33,7 +37,25 @@
             align-items: flex-start;
             justify-content: space-between;
             width: 70%;
-            font-size: 2vw;
+            font-size: 1.5rem;
+        }
+        .special{
+            font-size: 3rem;
+        }
+        @media screen and (max-width:630px) {
+            .content, .special{
+                font-size: 1rem;
+                width: 90%;
+            }
+            .wish:nth-child(odd){
+                flex-direction: column;
+            }
+            .wish:nth-child(even){
+                flex-direction: column;
+            }
+            img{
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -61,6 +83,8 @@
         </div>
     </div>
     <h2>Special Prsentation</h2>
-    <div style="text-align: center;">You are the beauty,<br>You are the trend.<br>You have such an aura,<br>Sunlight also tends to bend<br>Today I wish with all my heart,<br>For all you sadness to end<br>I wish you a very happy,<br>Birthday My dearest <b>best friend</b></div>
+    <div class="wish" style="width: fit-content; " >
+        <div style="text-align: center;" class="special">You are the beauty,<br>You are the trend.<br>You have such an aura,<br>Sunlight also tends to bend<br>Today I wish with all my heart,<br>For all you sadness to end<br>I wish you a very happy,<br>Birthday My dearest <b>best friend</b></div>
+    </div>
 </body>
 </html>
