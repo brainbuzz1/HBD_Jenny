@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday</title>
     <style>
+        h1, h2{
+            margin: 10px;
+            font-family: math;
+            color: #de4bbf;
+        }
         body{
-            height: 100vh;
+            /* height: 100vh; */
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -15,7 +20,7 @@
             overflow-x: scroll;
         }
         .angel{
-            height: 70vh;
+            /* height: 70vh; */
             position: relative;
             flex-direction: column;
         }
@@ -34,14 +39,14 @@
     <div class="angel" style="display: none;">
         <img class="girl" src="angel.gif" alt="girl">
     </div>
-    <h1 style="text-align: center; display: none;">Happy Birthday<br>My Angel 🥳🥳</h1>
+    <h1 style="text-align: center; display: none;">Happy Birthday<br>My Angel 🥳🥳<br /><a href="wishes.html"><button>click me</button></a></h1>
     <h2></h2>
     <script>
         function change(){
             document.getElementsByClassName('butterfly')[0].style.display='none';
             document.getElementsByClassName('angel')[0].style.display='flex'
             document.querySelector('h2').innerHTML="Ohh it's an Angel<br>And It's her Birthday"
-            document.querySelector('h1').style.display='flex'
+            document.querySelector('h1').style.display='inline'
         }
     </script>
 </body>
